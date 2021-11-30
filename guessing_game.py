@@ -17,16 +17,16 @@ def guess_loop():
 
             # Compare it to the number to guess
             if guess > number_to_guess:
-                print("The number to guess is lower")
+                print("Le nombre a deviner est plus petit")
             elif guess < number_to_guess:
-                print("The number to guess is higher")
+                print("Le nombre a deviner est plus grand")
             else:
                 # The user found the number to guess, let's exit
-                print("You just found the number, it was indeed", guess)
+                print("Tu as trouvé le nombre, c'était en effet", guess)
                 return
         # A ValueError is raised by the int() function if the user inputs something else than a number
         except ValueError as err:
-            print("Invalid input, please enter an integer")
+            print("Entrée invalide, entrez un entier s'il vous plaît")
 
 # Launch the game
 guess_loop()
